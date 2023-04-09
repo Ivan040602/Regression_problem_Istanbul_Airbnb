@@ -19,7 +19,12 @@ This dataset is a collection of various Airbnb service offers in Istanbul. It co
 - <b>availability_365</b> - housing availability during the year. 
 
 To begin with, it is necessary to determine outliers for predicting the cost of housing using a box-plot graph that reflects the distribution of housing prices in the dataset and defines outliers. 
-Based on this schedule, we concluded that all rental offers with a value above 800 conventional units are outliers, so we do not need to consider them in the future.  
+Based on this schedule, we concluded that all rental offers with a value above 800 conventional units are outliers, so we do not need to consider them in the future.
+
+<br/>
+<img src="https://imgur.com/F9AiQ2v.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<br />
+
 After we have selected the necessary offers by removing outliers by cost, we start a new variable: <b>distance_from_the_center_km</b>, which reflects the distance calculated from the coordinates to the city center (We assume that the center of Istanbul will be Taksim Square). 
 After that, even at the stage of data preprocessing, after we have made sure that there are no gaps in the data, we smear the necessary variables and reindex the data. Based on the correlation matrix, we get the necessary relationships between variables. 
 The last stage of preprocessing is Label encoding, which allows you to write the desired text variables in their numerical display. 
@@ -48,6 +53,10 @@ The last model I applied to the data was the Bayesian model. Bayesian linear reg
 After applying these models, it is necessary to find out about their effectiveness on the data using the following criteria: Explained Variation Score (explains the variance of errors of a given dataset) and R^2 score (the proportion of the variation in the dependent variable that is predictable from the independent variables). 
 In our case we choose R^2 and EVS scores because in this case they seem to be the most understandable and definable.  
 As follows final R^2 and EVS scores for the applied models are: 
+
+<br/>
+<img src="https://imgur.com/swbGIvE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<br />
  
 It can be seen that these results are not good for the data, which means that regression models do not work well on these data, however, it can also be concluded that most likely, the proposed parameters are not fundamental for determining the cost of housing, because the cost of real estate is also affected by seasonality, subjective assessment of the owner, good repairs and even the floor on which the proposed housing is located. 
 
@@ -59,4 +68,7 @@ The results of different scores are shown below, which confirm the fact that the
 ### Result: 
 
 Summing up, we can say that of all the indicators demonstrating relatively poor model performance. The Gradient boosting model showed the best result. The indicators of this model are as follows: 
- 
+
+<br/>
+<img src="https://imgur.com/NrvsAJe.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<br />
