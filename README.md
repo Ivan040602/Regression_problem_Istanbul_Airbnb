@@ -55,9 +55,8 @@ In our case we choose R^2 and EVS scores because in this case they seem to be th
 As follows final R^2 and EVS scores for the applied models are: 
 
 <br/>
-<img src="https://imgur.com/swbGIvE.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/2DxiF1z.png" height="60%" width="60%" alt="Disk Sanitization Steps"/>
 <br />
- 
 It can be seen that these results are not good for the data, which means that regression models do not work well on these data, however, it can also be concluded that most likely, the proposed parameters are not fundamental for determining the cost of housing, because the cost of real estate is also affected by seasonality, subjective assessment of the owner, good repairs and even the floor on which the proposed housing is located. 
 
 ### Improving scores: 
